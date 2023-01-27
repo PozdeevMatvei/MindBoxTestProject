@@ -9,7 +9,7 @@ namespace Figures.Factory
 {
     public class CircleCreate : Creator
     {
-        public override Circle FactoryMethod(params double[] values)
+        public override Circle Create(params double[] values)
         {
             if (values.Length != 1)
                 throw new ArgumentException("Круг не существует");

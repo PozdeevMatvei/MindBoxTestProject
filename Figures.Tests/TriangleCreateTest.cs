@@ -9,9 +9,9 @@ namespace Figures.Tests
     public class TriangleCreateTest
     {
         [Fact]
-        public void FactoryMethod_NotThreeParam_ThrowArgumentException()
+        public void Create_NotThreeParam_ThrowArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => new TriangleCreate().FactoryMethod(1));
+            Assert.Throws<ArgumentException>(() => new TriangleCreate().Create(1));
         }
     }
 }

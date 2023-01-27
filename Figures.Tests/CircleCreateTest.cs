@@ -9,9 +9,9 @@ namespace Figures.Tests
     public class CircleCreateTest
     {
         [Fact]
-        public void FactoryMethod_MultipleParam_ThrowsArgumentException()
+        public void Create_MultipleParam_ThrowsArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => new CircleCreate().FactoryMethod(1, 2));
+            Assert.Throws<ArgumentException>(() => new CircleCreate().Create(1, 2));
         }
     }
 }
